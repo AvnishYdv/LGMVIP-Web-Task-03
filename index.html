@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Registration Form</h1>
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="website">Website:</label>
+        <input type="url" id="website" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" required>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+      </div>
+      <div class="form-group">
+        <label for="skill">Skill:</label>
+        <select id="skill" required>
+          <option value="">Select Skill</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="React">React</option>
+          <!-- Add more options if needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="button" id="enroll-btn">Enroll Student</button>
+        <button type="button" id="clear-btn">Clear</button>
+      </div>
+    </form>
+    <div id="student-info"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
